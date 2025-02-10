@@ -120,25 +120,26 @@
 
         <div class="button-container">
             <button class="yes" onclick="mostrarImagen()">Sí, me encantaría</button>
-            <button class="no" id="no-btn">Lo siento, no</button>
+            <button class="no" id="no-btn">No😔 </button>
         </div>
 
         <div id="image-container">
-            <h2>¡Sabía que dirías que sí! 🥰😍❤️</h2>
+            <h2>¡Sabía que dirías que sí! Te amo mi amor🥰😍❤️</h2>
             <img src="https://raw.githubusercontent.com/Faviocs/Invitacion/main/IMG_4248.JPEG" alt="Imagen romántica">
         </div>
     </div>
 
     <script>
-        function mostrarImagen() {
-            document.getElementById('image-container').style.display = 'block';
-        }
+    function mostrarImagen() {
+        document.getElementById('image-container').style.display = 'block'; // Muestra la imagen
+        document.getElementById('no-btn').style.display = 'none'; // Oculta el botón "Lo siento, no"
+    }
 
-        document.getElementById('no-btn').addEventListener('mouseover', function() {
-            this.style.position = 'absolute';
-            this.style.top = Math.random() * window.innerHeight + 'px';
-            this.style.left = Math.random() * window.innerWidth + 'px';
-        });
+    document.getElementById('no-btn').addEventListener('mouseover', function() {
+        this.style.position = 'absolute';
+        this.style.top = Math.random() * window.innerHeight + 'px';
+        this.style.left = Math.random() * window.innerWidth + 'px';
+    });
     </script>
 </body>
 </html>
